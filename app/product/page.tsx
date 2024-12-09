@@ -1,9 +1,9 @@
-import { Get_Product } from "../components/product_get";
+import { ProductList } from "../components/product_get";
 
 export default  function Product(){
     return(
         <div>
-        <Get_Product/>
+        <ProductList/>
         </div>
     );
 }
