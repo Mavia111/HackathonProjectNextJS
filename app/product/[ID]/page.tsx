@@ -2,9 +2,11 @@ import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 
 // Define the product data type
-
+interface Ty {
+  id:string;// Use `string` instead of `String`
+}
 // The page component that receives params (from dynamic route)
-export default async function ProductPage() {
+export default async function ProductPage({ params }: { params: { id: Ty } }) {
   // Fetch product data using the dynamic "id" route parameter
   const productData = await client.fetch(
     `*[_type == "product" && customID == 5555][0] {
@@ -15,7 +17,7 @@ export default async function ProductPage() {
     }`,
      // Use the dynamic "id" from the URL
   );
-
+  const abc = { id: params.id };
   // If no product found, show a "not found" message
   if (!productData) {
     return <p>Product not found</p>;
