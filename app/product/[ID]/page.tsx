@@ -17,7 +17,7 @@ export default async function ProductPage(props:Ty) {
     }`,
      // Use the dynamic "id" from the URL
   );
-  const abc = { id: params.id };
+  const abc = { props.ID };
   // If no product found, show a "not found" message
   if (!productData) {
     return <p>Product not found</p>;
