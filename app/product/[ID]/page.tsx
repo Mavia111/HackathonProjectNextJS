@@ -3,7 +3,7 @@ import Image from "next/image";
 
 // Define the product data type
 interface Ty {
-  id:string;// Use `string` instead of `String`
+  ID:string;// Use `string` instead of `String`
 }
 // The page component that receives params (from dynamic route)
 export default async function ProductPage(props:Ty) {
