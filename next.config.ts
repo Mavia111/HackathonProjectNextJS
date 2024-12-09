@@ -32,6 +32,12 @@ module.exports = {
   },
   // Add any other required settings
 };
+module.exports = {
+  reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  },
+};
 
 
 export default nextConfig;
