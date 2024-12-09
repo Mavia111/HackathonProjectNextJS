@@ -26,7 +26,7 @@ export async function Get_Product() {
 }
 
 export default async function ProductList() {
-  const products = await getProducts();
+  const products = await Get_Product();
 
   return (
     <div>
