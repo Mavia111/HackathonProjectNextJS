@@ -4,7 +4,7 @@ import Image from "next/image";
 // Define the product data type
 
 // The page component that receives params (from dynamic route)
-export default async function ProductPage({ params }: { params: { id: string } }) {
+export default async function ProductPage() {
   // Fetch product data using the dynamic "id" route parameter
   const productData = await client.fetch(
     `*[_type == "product" && customID == 5555][0] {
