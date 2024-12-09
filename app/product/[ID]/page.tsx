@@ -2,12 +2,7 @@ import { client } from "@/sanity/lib/client"; // Import your Sanity client
 import Image from "next/image";
 
 // Define the product data type
-interface Product {
-  productName: string;
-  productDescription: string;
-  price: number;
-  image_url: string;
-}
+
 
 // Component for Product Page
 export default async function ProductPage({ params }: { params: { id: string } }) {
