@@ -15,6 +15,20 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds:true,
   },
+
+  // next.config.js
+module.exports = {
+  reactStrictMode: true,
+  // Ensure you don't have conflicting rewrites or redirects
+  async redirects() {
+    return [];
+  },
+  async rewrites() {
+    return [];
+  },
+  // Add any other required settings
+},
+
   
 };
 // next.config.js
