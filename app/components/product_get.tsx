@@ -49,7 +49,7 @@ export async function Get_Product(){
     {data.map((val:Ty,i:number)=>{
       return(
         <div key={i}>
-          <Link  href={`/product/[ID]'` }>
+          <Link  href={`/product/[ID].tsx` }>
         <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
         
           <Image
