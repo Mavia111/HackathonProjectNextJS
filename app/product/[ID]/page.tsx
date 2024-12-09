@@ -7,13 +7,13 @@ import Image from "next/image";
 export default async function ProductPage({ params }: { params: { id: string } }) {
   // Fetch product data using the dynamic "id" route parameter
   const productData = await client.fetch(
-    `*[_type == "product" && customID == $id][0] {
+    `*[_type == "product" && customID == 5555][0] {
       productName,
       productDescription,
       price,
       "image_url": image.asset->url
     }`,
-    { id: params.id } // Use the dynamic "id" from the URL
+     // Use the dynamic "id" from the URL
   );
 
   // If no product found, show a "not found" message
