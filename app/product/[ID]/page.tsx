@@ -2,12 +2,6 @@ import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 
 // Define the product data type
-interface Product {
-  productName: string;
-  productDescription: string;
-  price: number;
-  image_url: string;
-}
 
 // The page component that receives params (from dynamic route)
 export default async function ProductPage({ params }: { params: { id: string } }) {
