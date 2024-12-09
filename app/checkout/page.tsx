@@ -1,10 +1,8 @@
 import Image from "next/image";
 import { NotebookIcon, ShoppingBagIcon } from "lucide-react";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Checkbox } from "@radix-ui/react-checkbox";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@radix-ui/react-select";
-import { Input } from "postcss";
+
 export default function Checkout(){
     return(
         <div>
@@ -224,7 +222,7 @@ export default function Checkout(){
             <div>
             <h2 className="font-medium text-[15px] leading-7 text-[#111] font-poppins">Nike Dri-FIT ADV TechKnit Ultra</h2>
                     <p className="font-normal text-[15px] leading-7 text-[#757575]">Men's Short-Sleeve Running Top <br />Ashen Slate/Cobalt Bliss</p>
-                    <p className="px-2">Size &nbsp; &nbsp; L</p><p className="pr-5">Quantity &nbsp; &nbsp; 1</p>
+                    <p className="px-2">Size<span className="pl-2">L</span></p><p className="pr-5">Quantity <span className="pl-2">1</span> </p>
                     <p className="font-normal text-[15px] leading-7 text-left font-poppins">MRP: ₹ 3 895.00</p>
             </div>
             </div>
@@ -233,7 +231,7 @@ export default function Checkout(){
             <div>
             <h2 className="font-medium text-[15px] leading-7 text-[#111] font-poppins">Nike Air Max 97 SE</h2>
                     <p className="font-normal text-[15px] leading-7 text-[#757575]">Men's Shoes<br />Flat Pewter/Light Bone/Black/White </p>
-                    <p className="px-2">Size &nbsp; &nbsp; 8</p><p className="pr-5">Quantity &nbsp; &nbsp; 1</p>
+                    <p className="px-2">Size <span className="pl-2">8</span></p><p className="pr-5">Quantity <span className="pl-2">1</span></p>
                     <p className="font-normal text-[15px] leading-7 text-left font-poppins">MRP: ₹ 3 895.00</p>
             </div>
             </div>

@@ -4,6 +4,7 @@ import SearchBox from "./searchbox";
 import ShoppingBagIcon from "./cart_Icon";
 import { useState } from "react";
 import WishlistIcon from "./wishlist_Icon";
+import Link from "next/link";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,18 +18,18 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between h-[60px] px-4">
         
         {/* Logo */}
-        <a className="flex items-center text-[#1111] mb-4 md:mb-0">
+        <Link href="/" className="flex items-center text-[#1111] mb-4 md:mb-0">
           <Image src="/images/logo.png" alt="Logo" width={100} height={50.54} />
-        </a>
+        </Link>
 
         {/* Desktop menu */}
         <nav className="hidden lg:flex lg:w-full space-x-8 items-center xl:ml-[18rem] lg:ml-4">
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">New & Featured</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">Men</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">Women</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">Kids</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">Sale</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">SNKRS</a>
+          <Link href="/product" className="font-helvetica font-medium text-[17px] hover:text-gray-900">New & Featured</Link>
+          <Link href="/product" className="font-helvetica font-medium text-[17px] hover:text-gray-900">Men</Link>
+          <Link href="/product" className="font-helvetica font-medium text-[17px] hover:text-gray-900">Women</Link>
+          <Link href="/product" className="font-helvetica font-medium text-[17px] hover:text-gray-900">Kids</Link>
+          <Link href="/product" className="font-helvetica font-medium text-[17px] hover:text-gray-900">Sale</Link>
+          <Link href="/product" className="font-helvetica font-medium text-[17px] hover:text-gray-900">SNKRS</Link>
         </nav>
         
         {/* Mobile menu button (Hamburger) */}
@@ -49,23 +50,23 @@ export function Navbar() {
             </svg>
           </span>
           <WishlistIcon/>
-          <ShoppingBagIcon />
+          <Link href="/cart"><ShoppingBagIcon /></Link>
         </div>
       </div>
 
-      {/* Mobile menu - Links visible on small screens */}
+      {/* Mobile menu - <Links visible on small screens */}
       <div
         className={`lg:hidden w-full space-y-4 mt-4 transition-all duration-300 ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
         <nav className="flex flex-col items-center">
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">New & Featured</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">Men</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">Women</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">Kids</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">Sale</a>
-          <a className="font-helvetica font-medium text-[17px] hover:text-gray-900">SNKRS</a>
+          <Link href="#" className="font-helvetica font-medium text-[17px] hover:text-gray-900">New & Featured</Link>
+          <Link href="#" className="font-helvetica font-medium text-[17px] hover:text-gray-900">Men</Link>
+          <Link href="#" className="font-helvetica font-medium text-[17px] hover:text-gray-900">Women</Link>
+          <Link href="#" className="font-helvetica font-medium text-[17px] hover:text-gray-900">Kids</Link>
+          <Link href="#" className="font-helvetica font-medium text-[17px] hover:text-gray-900">Sale</Link>
+          <Link href="#" className="font-helvetica font-medium text-[17px] hover:text-gray-900">SNKRS</Link>
         </nav>
       </div>
     </header>

@@ -38,7 +38,7 @@ export function Footer(){
             <a className="text-gray-600 font-normal text-[10px] leading-[32.67px] font-helvetica">Returns</a>
           </li>
           <li>
-            <a className="text-gray-600font-normal text-[10px] leading-[32.67px] font-helvetica">Payment Options</a>
+            <a className="text-gray-600 font-normal text-[10px] leading-[32.67px] font-helvetica">Payment Options</a>
           </li>
           <li>
             <a className="text-[#7E7E7E] font-normal text-[10px] leading-[32.67px] font-helvetica">Contact Us On Nike.com Inquiries</a>

@@ -2,14 +2,14 @@ import { client } from "@/sanity/lib/client";
 import Image from "next/image"
 import { FaShoppingCart } from 'react-icons/fa';
 
-
-
-  
-  export default async function Single_Product(props:any){
+interface Ty {
+  productName: string;
+  image_url:string;
+  price:number;
+  productDescription: string; // Use `string` instead of `String`
+}
+  export default async function Single_Product(){
     
-   
-    console.log(props);
-    const num = props.name;
      const fetchData = await client.fetch(`*[_type == "product" && customID == 5555] {
       productName,
       productDescription,
@@ -19,14 +19,14 @@ import { FaShoppingCart } from 'react-icons/fa';
       "image_url": image.asset->url
     }
     `);
-    console.log(fetchData);
     const data = await fetchData;
   return(
       
         <section className="text-gray-600 body-font overflow-hidden">
   <div className="container px-5 py-24 mx-auto">
-  {data.map((val:any,i:number)=>{
+  {data.map((val:Ty,i:number)=>{
     return(
+      <div key={i}>
     <div className="lg:w-4/5 mx-auto flex flex-wrap">
       <Image
         alt="ecommerce"
@@ -51,6 +51,7 @@ import { FaShoppingCart } from 'react-icons/fa';
           
         </div>
       </div>
+    </div>
     </div>
   );})}
   </div>

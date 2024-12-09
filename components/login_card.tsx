@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -17,7 +16,6 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
@@ -43,7 +41,7 @@ export function Login_Form() {
              htmlFor="terms2"
             className=" text-sm font-normal text-left text-[12px] leading-[14px] text-[#8D8D8D]">
             <Checkbox id="terms2" />
-            &nbsp;&nbsp;Keep me signed in
+            <span className="pl-2">Keep me signed in</span>
             </label>
             <label htmlFor="forget" className="text-right text-[12px] leading-[13.8px] font-normal text-[#BCBCBC]">Forgotten your password?</label>
     </div>
@@ -104,7 +102,7 @@ export function Join_Form() {
              htmlFor="terms2"
             className=" text-sm font-normal text-left text-[12px] leading-[14px] text-[#8D8D8D]">
             <Checkbox id="terms2" />
-            &nbsp;&nbsp;Sign up for emails to get updates from Nike on products, offers and your Member benefits
+            <span className="pl-2">Sign up for emails to get updates from Nike on products, offers and your Member benefits.</span>
             </label>
     </div>
           </div>

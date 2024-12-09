@@ -107,7 +107,7 @@ WHAT ARE NIKE'S DELIVERY OPTIONS?
         <div className="flex justify-center items-center py-5">
      <Image  src="/images/phone.png" alt="phone" width={64} height={64}/>
        </div> <p className="font-medium font-helvetica text-[16px] leading-7 text-center">000 800 919 0566</p>
-        <p className="font-normal font-helvetica text-[16px] leading-7 text-center">Products & Orders: 24 hours a day, 7 days a week Company Info & Enquiries: 07:30 - 16:30, Monday - Friday</p>
+        <p className="font-normal font-helvetica text-[16px] leading-7 text-center">Products  Orders: 24 hours a day, 7 days a week Company Info  Enquiries: 07:30 - 16:30, Monday - Friday</p>
      </div>
      <div>
      <div className="flex justify-center items-center py-5">

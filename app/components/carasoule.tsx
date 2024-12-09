@@ -1,3 +1,4 @@
+import Image  from "next/image";
 export function Product_Gallery(){
     return(
         <div> 
@@ -13,7 +14,7 @@ export function Product_Gallery(){
     <div className="flex flex-wrap -m-4">
       <div className="lg:w-1/3 md:w-full p-4 w-full">
         <a className="block relative h-48 rounded overflow-hidden">
-          <img
+          <Image
             alt="ecommerce"
             className="object-cover object-center w-full h-full block"
             src="/images/image.png"
@@ -37,7 +38,7 @@ export function Product_Gallery(){
       </div>
       <div className="lg:w-1/3 md:w-full p-4 w-full">
         <a className="block relative h-48 rounded overflow-hidden">
-          <img
+          <Image
             alt="ecommerce"
             className="object-cover object-center w-full h-full block"
             src="/images/img.png"
@@ -61,7 +62,7 @@ export function Product_Gallery(){
       </div>
       <div className="lg:w-1/3 md:w-full p-4 w-full">
         <a className="block relative h-48 rounded overflow-hidden">
-          <img
+          <Image
             alt="ecommerce"
             className="object-cover object-center w-full h-full block"
             src="/images/frame.png"
@@ -106,7 +107,7 @@ export default function Product_cat(){
                 <div className="lg:flex justify-center items-center">
                 <div className="lg:w-1/2 md:w-full p-4 w-full">
         <a className="block relative h-48 rounded overflow-hidden">
-          <img
+          <Image
             alt="ecommerce"
             className="object-cover object-center w-full h-full block"
             src="/images/pro1.png"
@@ -130,7 +131,7 @@ export default function Product_cat(){
       </div>
       <div className="lg:w-1/2 md:w-full p-4 w-full">
         <a className="block relative h-48 rounded overflow-hidden">
-          <img
+          <Image
             alt="ecommerce"
             className="object-cover object-center w-full h-full block"
             src="/images/Image (2).png"
@@ -158,7 +159,7 @@ export default function Product_cat(){
                 <div className="lg:flex justify-center items-center">
                 <div className="lg:w-1/2 md:w-full p-4 w-full">
         <a className="block relative h-48 rounded overflow-hidden">
-          <img
+          <Image
             alt="ecommerce"
             className="object-cover object-center w-full h-full block"
             src="/images/Image (3).png"
@@ -182,7 +183,7 @@ export default function Product_cat(){
       </div>
       <div className="lg:w-1/2 md:w-full p-4 w-full">
         <a className="block relative h-48 rounded overflow-hidden">
-          <img
+          <Image
             alt="ecommerce"
             className="object-cover object-center w-full h-full block"
             src="/images/Image (4).png"

@@ -166,10 +166,10 @@ export function Catelink(){
           Modest Wear
           </a>
           <a className="text-[#757575] text-[15px] leading-6 font-medium">
-          Hoodies & Pullovers
+          Hoodies Pullovers
           </a>
           <a className="text-[#757575] text-[15px] leading-6 font-medium">
-          Shirts & Tops
+          Shirts  Tops
           </a>
           
         </nav>
@@ -180,7 +180,7 @@ export function Catelink(){
         </h2>
         <nav className="flex flex-col sm:items-start sm:text-left text-left items-center -mb-1 space-y-2.5">
           <a className="text-[#757575] text-[15px] leading-6 font-medium">
-          Infant & Toddler Shoes
+          Infant  Toddler Shoes
           </a>
           <a className="text-[#757575] text-[15px] leading-6 font-medium">
           Kid's Shoes
