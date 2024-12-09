@@ -1,12 +1,8 @@
 import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 
-// Define the product data type
-interface Ty {
-  ID:string;// Use `string` instead of `String`
-}
-// The page component that receives params (from dynamic route)
-export default async function ProductPage(props:Ty) {
+ The page component that receives params (from dynamic route)
+export default async function ProductPage(props:any) {
   // Fetch product data using the dynamic "id" route parameter
   const productData = await client.fetch(
     `*[_type == "product" && customID == 5555][0] {
