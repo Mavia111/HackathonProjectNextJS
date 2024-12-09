@@ -48,7 +48,7 @@ export default async function ProductList() {
           {products.map((product: Ty) => (
             <div key={product.customID}>
               {/* Link to the dynamic product page */}
-              <Link href={`/product/${product.customID}`}>
+              <Link href={`/singleproduct`}>
                 <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                   <Image
                     alt={product.productName}
