@@ -64,7 +64,7 @@ export async function Get_Product() {
             return (
               <div key={i}>
                 {/* Link to the dynamic product page */}
-                <Link href={`/product/${val.customID}`}>
+                <Link href={`/product/[ID].page.tsx`}>
                   <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
                     <Image
                       alt="ecommerce"
