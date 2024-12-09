@@ -6,7 +6,7 @@ interface Ty {
   id:string;// Use `string` instead of `String`
 }
 // The page component that receives params (from dynamic route)
-export default async function ProductPage({ params }: { params: { id: Ty } }) {
+export default async function ProductPage(props:Ty) {
   // Fetch product data using the dynamic "id" route parameter
   const productData = await client.fetch(
     `*[_type == "product" && customID == 5555][0] {
