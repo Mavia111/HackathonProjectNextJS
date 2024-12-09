@@ -12,7 +12,7 @@ interface Ty {
 }
 
 // Fetch the products
-export async function getProducts() {
+export async function Get_Products() {
   const products = await client.fetch(
     `*[_type == "product"]{
       customID,
